@@ -1,0 +1,34 @@
+#Lottopaper{
+    width: 230px;
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    background-color: pink;
+    border-style: double;
+    padding: 5px;
+}
+
+.check{
+    margin-right:10px;
+}
+
+#Index{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    padding: 5px;
+    background-color: orange;
+    border-style: double;
+}
+
+#myNum{
+    width: 100px;
+}
+
+#ranNum{
+    width: 100px;
+}
+
+#result{
+    width: 100px;
+}
