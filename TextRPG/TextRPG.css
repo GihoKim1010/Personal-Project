@@ -1,0 +1,53 @@
+#textbox {
+    width: 700px;
+    height: 800px;
+    display: block;
+}
+
+#topArea {
+    display: block;
+    width: 700px;
+    height: 550px;
+    margin: 5px;
+    margin-bottom: -10px;
+}
+#bottomArea {
+    width: 700px;
+    white-space: nowrap;
+    display: flex;
+}
+
+#leftArea {
+    display: inline;
+    width: 350px;
+    height: 250px;
+    margin: 5px;
+}
+
+#rightArea {
+    display: inline;
+    width: 350px;
+    height: 250px;
+    margin: 5px;
+}
+
+#fightLog {
+    width: 700px;
+    height: 530px;
+}
+
+#playerLog {
+    width: 340px;
+    height: 250px;
+}
+
+#enemyLog {
+    width: 340px;
+    height: 220px;
+    display: block;
+}
+
+#buttonBox{
+    display: inline-block;
+    margin: 5px;
+}
