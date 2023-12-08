@@ -9,12 +9,17 @@ window.onload = function () {
     var orc = new Monster("오크", 100, 100, 10);
     var elf = new Player("엘프", 200, 200, 1, 0, 300, 30, 0);
 
-    function hpInfo() {  //HP 상태창
-        return " [ " + orc.name + " ( " + orc.hp + " / " + orc.maxhp + " ) ] "
-            + " [ " + elf.name + " ( " + elf.hp + " / " + elf.maxhp + " ) ] "
+    function playerInfo() {  //플레이어 hp
+        return " [ " + elf.name + " ( " + elf.hp + " / " + elf.maxhp + " ) ] "
     }
 
-    document.getElementById('statLog').value = hpInfo();
+    function monsterInfo() { //몬스터 hp
+        return " [ " + orc.name + " ( " + orc.hp + " / " + orc.maxhp + " ) ] "
+    }
+
+    //플레이어와 몬스터 각각 hp 상태를 출력
+    document.getElementById('playerLog').value = playerInfo();
+    document.getElementById('enemyLog').value = monsterInfo();
 
     //전투시작 메세지 출력
 
