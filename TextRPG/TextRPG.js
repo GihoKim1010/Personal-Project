@@ -1,7 +1,8 @@
 /* 할일
 1. HP상태창란 분리하여 텍스트 박스에 각각 따로 넣기.
 2. 전투버튼 눌렀을 때 전투가 시작되도록 변경.
-3. 전투 로그를 topArea에 뜨게 변경. */
+3. 전투 로그를 topArea에 뜨게 변경. 
+4. 스킬, 마나 제작*/
 
 window.onload = function () {
 
@@ -28,7 +29,7 @@ window.onload = function () {
     //전투 1회 + 상태창 띄우기
     function fight() {
 
-        //실제로 가하는 데미지를 0~공격력 사잇값으로 별도 지정.
+        //실제로 가하는 데미지를 1~공격력 사잇값으로 별도 지정.
         function dmg(attack) {
             var random = Math.floor(Math.random() * attack) + 1;
             return random;
@@ -42,7 +43,6 @@ window.onload = function () {
         if (orc.hp < 0) {
             orc.hp = 0;
         }
-
         elf.hp = elf.hp - orcDMG;
         if (elf.hp < 0) {
             elf.hp = 0;
@@ -50,7 +50,7 @@ window.onload = function () {
 
         //전투결과 출력
         return "엘프가 오크에게 " + elfDMG + "만큼의 데미지를 입혔습니다."
-        +"오크가 엘프에게 " + orcDMG + "만큼의 데미지를 입혔습니다."
+        +"오크가 엘프에게 " + orcDMG + "만큼의 데미지를 입혔습니다."   //텍스트 박스로 넣어야함.
     }
 
     document.getElementById('fightLog').value = fight();
